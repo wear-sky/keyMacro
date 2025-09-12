@@ -2,776 +2,618 @@ package pers.peng.keyMacro.utils;
 
 /**
  * 常量类
- * 
+ *
  * @author peng
  *
  */
 public class Constants {
 
-	/**
-	 * 系统状态
-	 * 
-	 * @author peng
-	 *
-	 */
-	public enum SystemStatus {
-
-		/**
-		 * 运行中
-		 */
-		RUNNING(0),
-
-		/**
-		 * 正在录入触发键
-		 */
-		RECORDIND_TRIGGERKEY(1),
-
-		/**
-		 * 正在录入连发键
-		 */
-		RECORDIND_TARGETKEY(2),
-
-		/**
-		 * 正在录入开关键
-		 */
-		RECORDIND_SWITCHKEY(3),
-
-		/**
-		 * 正在录入切换配置快捷键
-		 */
-		RECORDIND_SWITCHCONFIGKEY(4),
-
-		/**
-		 * 暂停中
-		 */
-		STOPPED(-1);
-
-		/**
-		 * 常量值
-		 */
-		private Integer value;
-
-		/**
-		 * 系统状态枚举类构造器
-		 * 
-		 * @param value 常量值
-		 */
-		private SystemStatus(Integer value) {
-			this.value = value;
-		}
+    /**
+     * 系统状态
+     *
+     * @author peng
+     *
+     */
+    public enum SystemStatus {
 
-		/**
-		 * 取得整型的常量值
-		 * 
-		 * @return 常量值
-		 */
-		public Integer value() {
-			return this.value;
-		}
+        /**
+         * 运行中
+         */
+        RUNNING(),
 
-		/**
-		 * 根据整型的常量值取得指定枚举常量
-		 * 
-		 * @param value 整型的常量值
-		 * @return 枚举常量实例
-		 */
-		public static SystemStatus getSystemStatus(Integer value) throws IllegalArgumentException {
-			for (SystemStatus systemStatus : SystemStatus.values()) {
-				if (systemStatus.value.equals(value)) {
-					return systemStatus;
-				}
-			}
-			return null;
-		}
+        /**
+         * 正在录入触发键
+         */
+        RECORDIND_TRIGGERKEY(),
 
-		/**
-		 * 根据枚举常量的名字取得指定枚举常量
-		 * 
-		 * @param name 枚举常量的名字
-		 * @return 枚举常量实例
-		 */
-		public static SystemStatus getSystemStatus(String name) throws IllegalArgumentException {
-			for (SystemStatus systemStatus : SystemStatus.values()) {
-				if (name.equals(systemStatus.name())) {
-					return systemStatus;
-				}
-			}
-			return null;
-		}
-	}
+        /**
+         * 正在录入连发键
+         */
+        RECORDIND_TARGETKEY(),
 
-	/**
-	 * 键盘钩子按键码
-	 * 
-	 * @author peng
-	 *
-	 */
-	public enum VkCode {
+        /**
+         * 正在录入开关键
+         */
+        RECORDIND_SWITCHKEY(),
 
-		ESC(27),
+        /**
+         * 正在录入切换配置快捷键
+         */
+        RECORDIND_SWITCHCONFIGKEY(),
 
-		F1(112),
+        /**
+         * 暂停中
+         */
+        STOPPED();
 
-		F2(113),
+        /**
+         * 系统状态枚举类构造器
+         *
+         */
+        SystemStatus() {
+        }
 
-		F3(114),
+    }
 
-		F4(115),
+    /**
+     * 键盘钩子按键码
+     *
+     * @author peng
+     *
+     */
+    public enum VkCode {
 
-		F5(116),
+        ESC(27),
 
-		F6(117),
+        F1(112),
 
-		F7(118),
+        F2(113),
 
-		F8(119),
+        F3(114),
 
-		F9(120),
+        F4(115),
 
-		F10(121),
+        F5(116),
 
-		F11(122),
+        F6(117),
 
-		F12(123),
+        F7(118),
 
-		BACK_QUOTE(192),
+        F8(119),
 
-		NUM1(49),
+        F9(120),
 
-		NUM2(50),
+        F10(121),
 
-		NUM3(51),
+        F11(122),
 
-		NUM4(52),
+        F12(123),
 
-		NUM5(53),
+        BACK_QUOTE(192),
 
-		NUM6(54),
+        NUM1(49),
 
-		NUM7(55),
+        NUM2(50),
 
-		NUM8(56),
+        NUM3(51),
 
-		NUM9(57),
+        NUM4(52),
 
-		NUM0(48),
+        NUM5(53),
 
-		MINUS(189),
+        NUM6(54),
 
-		EQUALS(187),
+        NUM7(55),
 
-		BACK_SPACE(8),
+        NUM8(56),
 
-		TAB(9),
+        NUM9(57),
 
-		Q(81),
+        NUM0(48),
 
-		W(87),
+        MINUS(189),
 
-		E(69),
+        EQUALS(187),
 
-		R(82),
+        BACK_SPACE(8),
 
-		T(84),
+        TAB(9),
 
-		Y(89),
+        Q(81),
 
-		U(85),
+        W(87),
 
-		I(73),
+        E(69),
 
-		O(79),
+        R(82),
 
-		P(80),
+        T(84),
 
-		OPEN_BRACKET(219),
+        Y(89),
 
-		CLOSE_BRACKET(221),
+        U(85),
 
-		BACK_SLASH(220),
+        I(73),
 
-		CAPS_LOCK(20),
+        O(79),
 
-		A(65),
+        P(80),
 
-		S(83),
+        OPEN_BRACKET(219),
 
-		D(68),
+        CLOSE_BRACKET(221),
 
-		F(70),
+        BACK_SLASH(220),
 
-		G(71),
+        CAPS_LOCK(20),
 
-		H(72),
+        A(65),
 
-		J(74),
+        S(83),
 
-		K(75),
+        D(68),
 
-		L(76),
+        F(70),
 
-		SEMICOLON(186),
+        G(71),
 
-		QUOTE(222),
+        H(72),
 
-		ENTER(13),
+        J(74),
 
-		LEFT_SHIFT(160),
+        K(75),
 
-		Z(90),
+        L(76),
 
-		X(88),
+        SEMICOLON(186),
 
-		C(67),
+        QUOTE(222),
 
-		V(86),
+        ENTER(13),
 
-		B(66),
+        LEFT_SHIFT(160),
 
-		N(78),
+        Z(90),
 
-		M(77),
+        X(88),
 
-		COMMA(188),
+        C(67),
 
-		PERIOD(190),
+        V(86),
 
-		SLASH(191),
+        B(66),
 
-		RIGHT_SHIFT(161),
+        N(78),
 
-		LEFT_CTRL(162),
+        M(77),
 
-		LEFT_WIN(91),
+        COMMA(188),
 
-		SPACE(32),
+        PERIOD(190),
 
-		MENU(93),
+        SLASH(191),
 
-		RIGHT_CTRL(163),
+        RIGHT_SHIFT(161),
 
-		PRINT_SCREEN(44),
+        LEFT_CTRL(162),
 
-		SCROLL_LOCK(145),
+        LEFT_WIN(91),
 
-		PAUSE_BREAK(19),
+        SPACE(32),
 
-		INSERT(45),
+        MENU(93),
 
-		DELETE(46),
+        RIGHT_CTRL(163),
 
-		HOME(36),
+        PRINT_SCREEN(44),
 
-		END(35),
+        SCROLL_LOCK(145),
 
-		PAGE_UP(33),
+        PAUSE_BREAK(19),
 
-		PAGE_DOWN(34),
+        INSERT(45),
 
-		UP(38),
+        DELETE(46),
 
-		LEFT(37),
+        HOME(36),
 
-		DOWN(40),
+        END(35),
 
-		RIGHT(39),
+        PAGE_UP(33),
 
-		NUMPAD0(96),
+        PAGE_DOWN(34),
 
-		NUMPAD1(97),
+        UP(38),
 
-		NUMPAD2(98),
+        LEFT(37),
 
-		NUMPAD3(99),
+        DOWN(40),
 
-		NUMPAD4(100),
+        RIGHT(39),
 
-		NUMPAD5(101),
+        NUMPAD0(96),
 
-		NUMPAD6(102),
+        NUMPAD1(97),
 
-		NUMPAD7(103),
+        NUMPAD2(98),
 
-		NUMPAD8(104),
+        NUMPAD3(99),
 
-		NUMPAD9(105),
+        NUMPAD4(100),
+
+        NUMPAD5(101),
+
+        NUMPAD6(102),
+
+        NUMPAD7(103),
+
+        NUMPAD8(104),
+
+        NUMPAD9(105),
 
 //		NUM_LOCK(144),
 
-		DIVIDE(111),
-
-		MULTIPLY(106),
-
-		SUBTRACT(109),
-
-		ADD(107),
-
-		NUMPAD_ENTER(13),
-
-		DECIMAL(110);
-
-		/**
-		 * 常量值
-		 */
-		private Integer value;
-
-		/**
-		 * 键盘钩子按键码枚举类构造器
-		 * 
-		 * @param value 常量值
-		 */
-		private VkCode(Integer value) {
-			this.value = value;
-		}
-
-		/**
-		 * 取得整型的常量值
-		 * 
-		 * @return 常量值
-		 */
-		public Integer value() {
-			return this.value;
-		}
-
-		/**
-		 * 根据整型的常量值取得指定枚举常量
-		 * 
-		 * @param value 整型的常量值
-		 * @return 枚举常量实例
-		 */
-		public static VkCode getVkCode(Integer value) throws IllegalArgumentException {
-			for (VkCode vkCode : VkCode.values()) {
-				if (vkCode.value.equals(value)) {
-					return vkCode;
-				}
-			}
-			return null;
-		}
-
-		/**
-		 * 根据枚举常量的名字取得指定枚举常量
-		 * 
-		 * @param name 枚举常量的名字
-		 * @return 枚举常量实例
-		 */
-		public static VkCode getVkCode(String name) throws IllegalArgumentException {
-			for (VkCode vkCode : VkCode.values()) {
-				if (name.equals(vkCode.name())) {
-					return vkCode;
-				}
-			}
-			return null;
-		}
-	}
-
-	/**
-	 * 鼠标钩子鼠标码
-	 * 
-	 * @author peng
-	 *
-	 */
-	public enum MouseCode {
-
-		MBUTTON(0),
-
-		XBUTTON1(65536),
-
-		XBUTTON2(131072);
-
-		/**
-		 * 常量值
-		 */
-		private Integer value;
-
-		/**
-		 * 鼠标钩子鼠标码枚举类构造器
-		 * 
-		 * @param value 常量值
-		 */
-		private MouseCode(Integer value) {
-			this.value = value;
-		}
+        DIVIDE(111),
 
-		/**
-		 * 取得整型的常量值
-		 * 
-		 * @return 常量值
-		 */
-		public Integer value() {
-			return this.value;
-		}
+        MULTIPLY(106),
 
-		/**
-		 * 根据整型的常量值取得指定枚举常量
-		 * 
-		 * @param value 整型的常量值
-		 * @return 枚举常量实例
-		 */
-		public static MouseCode getMouseCode(Integer value) throws IllegalArgumentException {
-			for (MouseCode mouseCode : MouseCode.values()) {
-				if (mouseCode.value.equals(value)) {
-					return mouseCode;
-				}
-			}
-			return null;
-		}
+        SUBTRACT(109),
 
-		/**
-		 * 根据枚举常量的名字取得指定枚举常量
-		 * 
-		 * @param name 枚举常量的名字
-		 * @return 枚举常量实例
-		 */
-		public static MouseCode getMouseCode(String name) throws IllegalArgumentException {
-			for (MouseCode mouseCode : MouseCode.values()) {
-				if (name.equals(mouseCode.name())) {
-					return mouseCode;
-				}
-			}
-			return null;
-		}
-	}
+        ADD(107),
 
-	public enum DdCode {
+        NUMPAD_ENTER(13),
 
-		ESC(100),
+        DECIMAL(110);
 
-		F1(101),
+        /**
+         * 常量值
+         */
+        private final Integer value;
 
-		F2(102),
+        /**
+         * 键盘钩子按键码枚举类构造器
+         *
+         * @param value 常量值
+         */
+        VkCode(Integer value) {
+            this.value = value;
+        }
 
-		F3(103),
+        /**
+         * 取得整型的常量值
+         *
+         * @return 常量值
+         */
+        public Integer value() {
+            return this.value;
+        }
 
-		F4(104),
+        /**
+         * 根据整型的常量值取得指定枚举常量
+         *
+         * @param value 整型的常量值
+         * @return 枚举常量实例
+         */
+        public static VkCode getVkCode(Integer value) throws IllegalArgumentException {
+            for (VkCode vkCode : VkCode.values()) {
+                if (vkCode.value.equals(value)) {
+                    return vkCode;
+                }
+            }
+            return null;
+        }
 
-		F5(105),
+        /**
+         * 根据枚举常量的名字取得指定枚举常量
+         *
+         * @param name 枚举常量的名字
+         * @return 枚举常量实例
+         */
+        public static VkCode getVkCode(String name) throws IllegalArgumentException {
+            for (VkCode vkCode : VkCode.values()) {
+                if (name.equals(vkCode.name())) {
+                    return vkCode;
+                }
+            }
+            return null;
+        }
+    }
 
-		F6(106),
+    public enum DdCode {
 
-		F7(107),
+        ESC(100),
 
-		F8(108),
+        F1(101),
 
-		F9(109),
+        F2(102),
 
-		F10(110),
+        F3(103),
 
-		F11(111),
+        F4(104),
 
-		F12(112),
+        F5(105),
 
-		BACK_QUOTE(200),
+        F6(106),
 
-		NUM1(201),
+        F7(107),
 
-		NUM2(202),
+        F8(108),
 
-		NUM3(203),
+        F9(109),
 
-		NUM4(204),
+        F10(110),
 
-		NUM5(205),
+        F11(111),
 
-		NUM6(206),
+        F12(112),
 
-		NUM7(207),
+        BACK_QUOTE(200),
 
-		NUM8(208),
+        NUM1(201),
 
-		NUM9(209),
+        NUM2(202),
 
-		NUM0(210),
+        NUM3(203),
 
-		MINUS(211),
+        NUM4(204),
 
-		EQUALS(212),
+        NUM5(205),
 
-		BACK_SPACE(214),
+        NUM6(206),
 
-		TAB(300),
+        NUM7(207),
 
-		Q(301),
+        NUM8(208),
 
-		W(302),
+        NUM9(209),
 
-		E(303),
+        NUM0(210),
 
-		R(304),
+        MINUS(211),
 
-		T(305),
+        EQUALS(212),
 
-		Y(306),
+        BACK_SPACE(214),
 
-		U(307),
+        TAB(300),
 
-		I(308),
+        Q(301),
 
-		O(309),
+        W(302),
 
-		P(310),
+        E(303),
 
-		OPEN_BRACKET(311),
+        R(304),
 
-		CLOSE_BRACKET(312),
+        T(305),
 
-		BACK_SLASH(213),
+        Y(306),
 
-		CAPS_LOCK(400),
+        U(307),
 
-		A(401),
+        I(308),
 
-		S(402),
+        O(309),
 
-		D(403),
+        P(310),
 
-		F(404),
+        OPEN_BRACKET(311),
 
-		G(405),
+        CLOSE_BRACKET(312),
 
-		H(406),
+        BACK_SLASH(213),
 
-		J(407),
+        CAPS_LOCK(400),
 
-		K(408),
+        A(401),
 
-		L(409),
+        S(402),
 
-		SEMICOLON(410),
+        D(403),
 
-		QUOTE(411),
+        F(404),
 
-		ENTER(313),
+        G(405),
 
-		LEFT_SHIFT(500),
+        H(406),
 
-		Z(501),
+        J(407),
 
-		X(502),
+        K(408),
 
-		C(503),
+        L(409),
 
-		V(504),
+        SEMICOLON(410),
 
-		B(505),
+        QUOTE(411),
 
-		N(506),
+        ENTER(313),
 
-		M(507),
+        LEFT_SHIFT(500),
 
-		COMMA(508),
+        Z(501),
 
-		PERIOD(509),
+        X(502),
 
-		SLASH(510),
+        C(503),
 
-		RIGHT_SHIFT(511),
+        V(504),
 
-		LEFT_CTRL(600),
+        B(505),
 
-		LEFT_WIN(601),
+        N(506),
 
-		LEFT_ALT(602),
+        M(507),
 
-		SPACE(603),
+        COMMA(508),
 
-		RIGHT_ALD(604),
+        PERIOD(509),
 
-		MENU(606),
+        SLASH(510),
 
-		RIGHT_CTRL(607),
+        RIGHT_SHIFT(511),
 
-		PRINT_SCREEN(700),
+        LEFT_CTRL(600),
 
-		SCROLL_LOCK(701),
+        LEFT_WIN(601),
 
-		PAUSE_BREAK(702),
+        LEFT_ALT(602),
 
-		INSERT(703),
+        SPACE(603),
 
-		DELETE(706),
+        RIGHT_ALD(604),
 
-		HOME(704),
+        MENU(606),
 
-		END(707),
+        RIGHT_CTRL(607),
 
-		PAGE_UP(705),
+        PRINT_SCREEN(700),
 
-		PAGE_DOWN(708),
+        SCROLL_LOCK(701),
 
-		UP(709),
+        PAUSE_BREAK(702),
 
-		LEFT(710),
+        INSERT(703),
 
-		DOWN(711),
+        DELETE(706),
 
-		RIGHT(712),
+        HOME(704),
 
-		NUMPAD0(800),
+        END(707),
 
-		NUMPAD1(801),
+        PAGE_UP(705),
 
-		NUMPAD2(802),
+        PAGE_DOWN(708),
 
-		NUMPAD3(803),
+        UP(709),
 
-		NUMPAD4(804),
+        LEFT(710),
 
-		NUMPAD5(805),
+        DOWN(711),
 
-		NUMPAD6(806),
+        RIGHT(712),
 
-		NUMPAD7(807),
+        NUMPAD0(800),
 
-		NUMPAD8(808),
+        NUMPAD1(801),
 
-		NUMPAD9(809),
+        NUMPAD2(802),
 
-		NUM_LOCK(810),
+        NUMPAD3(803),
 
-		DIVIDE(811),
+        NUMPAD4(804),
 
-		MULTIPLY(812),
+        NUMPAD5(805),
 
-		SUBTRACT(813),
+        NUMPAD6(806),
 
-		ADD(814),
+        NUMPAD7(807),
 
-		NUMPAD_ENTER(815),
+        NUMPAD8(808),
 
-		DECIMAL(816),
+        NUMPAD9(809),
 
-		LEFT_CLICK_DOWN(1),
+        NUM_LOCK(810),
 
-		LEFT_CLICK_UP(2),
+        DIVIDE(811),
 
-		RIGHT_CLICK_DOWN(4),
+        MULTIPLY(812),
 
-		RIGHT_CLICK_UP(8),
+        SUBTRACT(813),
 
-		MBUTTON_DOWN(16),
+        ADD(814),
 
-		MBUTTON_UP(32),
+        NUMPAD_ENTER(815),
 
-		XBUTTON1_DOWN(64),
+        DECIMAL(816),
 
-		XBUTTON1_UP(128),
+        LEFT_CLICK_DOWN(1),
 
-		XBUTTON2_DOWN(256),
+        LEFT_CLICK_UP(2),
 
-		XBUTTON2_UP(512);
+        RIGHT_CLICK_DOWN(4),
 
-		private Integer value;
+        RIGHT_CLICK_UP(8),
 
-		private DdCode(Integer value) {
-			this.value = value;
-		}
+        MBUTTON_DOWN(16),
 
-		/**
-		 * 取得整型的枚举值
-		 * 
-		 * @return 枚举值
-		 */
-		public Integer value() {
-			return this.value;
-		}
+        MBUTTON_UP(32),
 
-		/**
-		 * 根据整型的枚举值取得指定枚举常量
-		 * 
-		 * @param value 整型的枚举值
-		 * @return 枚举常量实例
-		 */
-		public static DdCode getDdCode(Integer value) throws IllegalArgumentException {
-			for (DdCode ddCode : DdCode.values()) {
-				if (ddCode.value.equals(value)) {
-					return ddCode;
-				}
-			}
-			return null;
-		}
+        XBUTTON1_DOWN(64),
 
-		/**
-		 * 根据枚举常量的名字取得指定枚举常量
-		 * 
-		 * @param name 枚举常量的名字
-		 * @return 枚举常量实例
-		 */
-		public static DdCode getDdCode(String name) throws IllegalArgumentException {
-			for (DdCode ddCode : DdCode.values()) {
-				if (name.equals(ddCode.name())) {
-					return ddCode;
-				}
-			}
-			return null;
-		}
-	}
+        XBUTTON1_UP(128),
 
-	/**
-	 * 宏触发方式
-	 * 
-	 * @author peng
-	 *
-	 */
-	public enum TriggerType {
+        XBUTTON2_DOWN(256),
 
-		连发(0),
+        XBUTTON2_UP(512);
 
-		开关(1),
+        private final Integer value;
 
-		单次(2);
+        DdCode(Integer value) {
+            this.value = value;
+        }
 
-		/**
-		 * 常量值
-		 */
-		private Integer value;
+        /**
+         * 取得整型的枚举值
+         *
+         * @return 枚举值
+         */
+        public Integer value() {
+            return this.value;
+        }
 
-		/**
-		 * 宏触发方式类构造器
-		 * 
-		 * @param value 常量值
-		 */
-		private TriggerType(Integer value) {
-			this.value = value;
-		}
+        /**
+         * 根据枚举常量的名字取得指定枚举常量
+         *
+         * @param name 枚举常量的名字
+         * @return 枚举常量实例
+         */
+        public static DdCode getDdCode(String name) throws IllegalArgumentException {
+            for (DdCode ddCode : DdCode.values()) {
+                if (name.equals(ddCode.name())) {
+                    return ddCode;
+                }
+            }
+            return null;
+        }
+    }
 
-		/**
-		 * 取得整型的常量值
-		 * 
-		 * @return 常量值
-		 */
-		public Integer value() {
-			return this.value;
-		}
+    /**
+     * 宏触发方式
+     *
+     * @author peng
+     *
+     */
+    public enum TriggerType {
 
-		/**
-		 * 根据整型的常量值取得指定枚举常量
-		 * 
-		 * @param value 整型的常量值
-		 * @return 枚举常量实例
-		 */
-		public static TriggerType getTriggerType(Integer value) throws IllegalArgumentException {
-			for (TriggerType triggerType : TriggerType.values()) {
-				if (triggerType.value.equals(value)) {
-					return triggerType;
-				}
-			}
-			return null;
-		}
+        连发(),
 
-		/**
-		 * 根据枚举常量的名字取得指定枚举常量
-		 * 
-		 * @param name 枚举常量的名字
-		 * @return 枚举常量实例
-		 */
-		public static TriggerType getTriggerType(String name) throws IllegalArgumentException {
-			for (TriggerType triggerType : TriggerType.values()) {
-				if (triggerType.name().equals(name)) {
-					return triggerType;
-				}
-			}
-			return null;
-		}
-	}
+        开关(),
+
+        单次();
+
+        /**
+         * 宏触发方式类构造器
+         *
+         */
+        TriggerType() {
+        }
+
+        /**
+         * 根据枚举常量的名字取得指定枚举常量
+         *
+         * @param name 枚举常量的名字
+         * @return 枚举常量实例
+         */
+        public static TriggerType getTriggerType(String name) throws IllegalArgumentException {
+            for (TriggerType triggerType : TriggerType.values()) {
+                if (triggerType.name().equals(name)) {
+                    return triggerType;
+                }
+            }
+            return null;
+        }
+
+    }
 
 }

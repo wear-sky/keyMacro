@@ -5,40 +5,24 @@ import pers.peng.keyMacro.utils.DD;
 
 /**
  * 鼠标按键宏单元
- * 
- * @author peng
  *
+ * @param ddCode dd代码
+ * @author peng
+ * @see Constants.DdCode
  */
-public class MouseClickMC implements MacroCell {
+public record MouseClickMC(int ddCode) implements MacroCell {
 
-	/**
-	 * dd驱动实例
-	 */
-	private static DD dd = DD.INSTANCE;
+    /**
+     * dd驱动实例
+     */
+    private static final DD dd = DD.INSTANCE;
 
-	/**
-	 * dd代码
-	 * 
-	 * @see Constants.DdCode
-	 */
-	private int ddCode;
-
-	/**
-	 * 构造鼠标按键宏单元
-	 * 
-	 * @param ddCode dd代码
-	 * @see Constants.DdCode
-	 */
-	public MouseClickMC(int ddCode) {
-		this.ddCode = ddCode;
-	}
-
-	/**
-	 * 执行宏单元
-	 */
-	@Override
-	public void performed() {
-		dd.DD_btn(ddCode);
-	}
+    /**
+     * 执行宏单元
+     */
+    @Override
+    public void performed() {
+        dd.DD_btn(ddCode);
+    }
 
 }
