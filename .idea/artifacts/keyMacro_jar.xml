@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="keyMacro:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/keyMacro_jar</output-path>
+    <root id="archive" name="keyMacro.jar">
+      <element id="module-output" name="keyMacro" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/jar/org.eclipse.text_3.12.300.v20220921-1010.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/jar/org.eclipse.equinox.common_3.17.100.v20230202-1341.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/jar/org.eclipse.equinox.registry_3.11.200.v20220817-1601.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/jar/org.eclipse.osgi_3.18.300.v20230220-1352.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/jar/org.eclipse.swt.win32.win32.x86_64_3.123.0.v20230220-1431.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/jar/org.eclipse.ui.workbench_3.128.0.v20230220-1021.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/jar/jna-5.13.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/jar/org.eclipse.core.runtime_3.26.100.v20221021-0005.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/jar/org.eclipse.jface_3.29.0.v20230214-1401.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/jar/org.eclipse.core.commands_3.10.400.v20230220-0932.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/jar/jna-platform-5.13.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/jar/com.ibm.icu_72.1.0.v20221115-2007.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/jar/org.eclipse.ui.forms_3.11.600.v20230220-0932.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/jar/org.eclipse.jface.text_3.23.0.v20230123-1047.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
