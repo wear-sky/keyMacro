@@ -1,6 +1,6 @@
-package pers.peng.keyMacro.ui;
+package org.wearsky.keyMacro.ui;
 
-import pers.peng.keyMacro.utils.DD;
+import org.wearsky.keyMacro.utils.DD;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;

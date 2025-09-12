@@ -1,11 +1,11 @@
-package pers.peng.keyMacro.ui;
+package org.wearsky.keyMacro.ui;
 
-import pers.peng.keyMacro.hook.KeyboardHook;
-import pers.peng.keyMacro.macro.Macro;
-import pers.peng.keyMacro.main.Main;
-import pers.peng.keyMacro.utils.Constants.SystemStatus;
-import pers.peng.keyMacro.utils.IconUtils;
-import pers.peng.keyMacro.utils.Switch;
+import org.wearsky.keyMacro.hook.KeyboardHook;
+import org.wearsky.keyMacro.macro.Macro;
+import org.wearsky.keyMacro.main.Main;
+import org.wearsky.keyMacro.utils.Constants.SystemStatus;
+import org.wearsky.keyMacro.utils.IconUtils;
+import org.wearsky.keyMacro.utils.Switch;
 
 import javax.swing.*;
 import javax.swing.GroupLayout.Alignment;

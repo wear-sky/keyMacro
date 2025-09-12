@@ -1,8 +1,8 @@
-package pers.peng.keyMacro.ui;
+package org.wearsky.keyMacro.ui;
 
-import pers.peng.keyMacro.main.Main;
-import pers.peng.keyMacro.utils.Constants.SystemStatus;
-import pers.peng.keyMacro.utils.Constants.TriggerType;
+import org.wearsky.keyMacro.main.Main;
+import org.wearsky.keyMacro.utils.Constants.SystemStatus;
+import org.wearsky.keyMacro.utils.Constants.TriggerType;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;

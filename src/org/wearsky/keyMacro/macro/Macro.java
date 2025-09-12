@@ -1,6 +1,6 @@
-package pers.peng.keyMacro.macro;
+package org.wearsky.keyMacro.macro;
 
-import pers.peng.keyMacro.macroCell.MacroCell;
+import org.wearsky.keyMacro.macroCell.MacroCell;
 
 /**
  * 宏抽象类

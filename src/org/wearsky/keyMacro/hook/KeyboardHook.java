@@ -1,4 +1,4 @@
-package pers.peng.keyMacro.hook;
+package org.wearsky.keyMacro.hook;
 
 import com.sun.jna.Pointer;
 import com.sun.jna.platform.win32.Kernel32;
@@ -11,13 +11,13 @@ import com.sun.jna.platform.win32.WinUser.HHOOK;
 import com.sun.jna.platform.win32.WinUser.KBDLLHOOKSTRUCT;
 import com.sun.jna.platform.win32.WinUser.LowLevelKeyboardProc;
 import com.sun.jna.platform.win32.WinUser.MSG;
-import pers.peng.keyMacro.macro.Macro;
-import pers.peng.keyMacro.main.Main;
-import pers.peng.keyMacro.ui.MacroDialog;
-import pers.peng.keyMacro.ui.MainFrame;
-import pers.peng.keyMacro.utils.Constants.DdCode;
-import pers.peng.keyMacro.utils.Constants.VkCode;
-import pers.peng.keyMacro.utils.Switch;
+import org.wearsky.keyMacro.macro.Macro;
+import org.wearsky.keyMacro.main.Main;
+import org.wearsky.keyMacro.ui.MacroDialog;
+import org.wearsky.keyMacro.ui.MainFrame;
+import org.wearsky.keyMacro.utils.Constants.DdCode;
+import org.wearsky.keyMacro.utils.Constants.VkCode;
+import org.wearsky.keyMacro.utils.Switch;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;

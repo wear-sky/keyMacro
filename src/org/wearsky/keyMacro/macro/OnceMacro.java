@@ -1,8 +1,8 @@
-package pers.peng.keyMacro.macro;
+package org.wearsky.keyMacro.macro;
 
-import pers.peng.keyMacro.macroCell.MacroCell;
-import pers.peng.keyMacro.main.Main;
-import pers.peng.keyMacro.utils.Constants.SystemStatus;
+import org.wearsky.keyMacro.macroCell.MacroCell;
+import org.wearsky.keyMacro.main.Main;
+import org.wearsky.keyMacro.utils.Constants.SystemStatus;
 
 /**
  * 单次执行宏，按一下执行一次，执行完成后才能触发下一次

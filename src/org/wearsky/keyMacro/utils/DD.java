@@ -1,8 +1,8 @@
-package pers.peng.keyMacro.utils;
+package org.wearsky.keyMacro.utils;
 
 import com.sun.jna.Library;
 import com.sun.jna.Native;
-import pers.peng.keyMacro.utils.Constants.DdCode;
+import org.wearsky.keyMacro.utils.Constants.DdCode;
 
 /**
  * 连接DD驱动链接库

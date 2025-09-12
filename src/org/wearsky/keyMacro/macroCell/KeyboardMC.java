@@ -1,7 +1,7 @@
-package pers.peng.keyMacro.macroCell;
+package org.wearsky.keyMacro.macroCell;
 
-import pers.peng.keyMacro.utils.Constants;
-import pers.peng.keyMacro.utils.DD;
+import org.wearsky.keyMacro.utils.Constants;
+import org.wearsky.keyMacro.utils.DD;
 
 /**
  * 键盘宏单元

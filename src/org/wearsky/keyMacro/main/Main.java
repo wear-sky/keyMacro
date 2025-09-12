@@ -1,9 +1,9 @@
-package pers.peng.keyMacro.main;
+package org.wearsky.keyMacro.main;
 
-import pers.peng.keyMacro.macro.Macro;
-import pers.peng.keyMacro.ui.LoadingDDDialog;
-import pers.peng.keyMacro.ui.MainFrame;
-import pers.peng.keyMacro.utils.Constants.SystemStatus;
+import org.wearsky.keyMacro.macro.Macro;
+import org.wearsky.keyMacro.ui.LoadingDDDialog;
+import org.wearsky.keyMacro.ui.MainFrame;
+import org.wearsky.keyMacro.utils.Constants.SystemStatus;
 
 import javax.swing.*;
 import java.awt.*;

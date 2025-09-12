@@ -1,4 +1,4 @@
-package pers.peng.keyMacro.utils;
+package org.wearsky.keyMacro.utils;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;

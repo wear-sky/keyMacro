@@ -1,17 +1,17 @@
-package pers.peng.keyMacro.utils;
+package org.wearsky.keyMacro.utils;
 
-import pers.peng.keyMacro.macro.ContinualMacro;
-import pers.peng.keyMacro.macro.Macro;
-import pers.peng.keyMacro.macro.OnceMacro;
-import pers.peng.keyMacro.macro.SwitchMacro;
-import pers.peng.keyMacro.macroCell.*;
-import pers.peng.keyMacro.main.Main;
-import pers.peng.keyMacro.ui.MainFrame;
-import pers.peng.keyMacro.ui.MainFrame.MacrosTableModel;
-import pers.peng.keyMacro.utils.Constants.DdCode;
-import pers.peng.keyMacro.utils.Constants.SystemStatus;
-import pers.peng.keyMacro.utils.Constants.TriggerType;
-import pers.peng.keyMacro.utils.Constants.VkCode;
+import org.wearsky.keyMacro.macro.ContinualMacro;
+import org.wearsky.keyMacro.macro.Macro;
+import org.wearsky.keyMacro.macro.OnceMacro;
+import org.wearsky.keyMacro.macro.SwitchMacro;
+import org.wearsky.keyMacro.macroCell.*;
+import org.wearsky.keyMacro.main.Main;
+import org.wearsky.keyMacro.ui.MainFrame;
+import org.wearsky.keyMacro.ui.MainFrame.MacrosTableModel;
+import org.wearsky.keyMacro.utils.Constants.DdCode;
+import org.wearsky.keyMacro.utils.Constants.SystemStatus;
+import org.wearsky.keyMacro.utils.Constants.TriggerType;
+import org.wearsky.keyMacro.utils.Constants.VkCode;
 
 import javax.swing.*;
 import java.io.BufferedReader;

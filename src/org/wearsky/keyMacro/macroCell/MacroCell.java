@@ -1,4 +1,4 @@
-package pers.peng.keyMacro.macroCell;
+package org.wearsky.keyMacro.macroCell;
 
 /**
  * 宏单元接口

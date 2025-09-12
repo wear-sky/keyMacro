@@ -1,4 +1,4 @@
-package pers.peng.keyMacro.utils;
+package org.wearsky.keyMacro.utils;
 
 /**
  * 常量类
