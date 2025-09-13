@@ -1,4 +1,4 @@
-package org.wearsky.keyMacro.utils;
+package com.wearsky.keyMacro.utils;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;

@@ -1,8 +1,8 @@
-package org.wearsky.keyMacro.macro;
+package com.wearsky.keyMacro.macro;
 
-import org.wearsky.keyMacro.macroCell.MacroCell;
-import org.wearsky.keyMacro.main.Main;
-import org.wearsky.keyMacro.utils.Constants.SystemStatus;
+import com.wearsky.keyMacro.macroCell.MacroCell;
+import com.wearsky.keyMacro.main.Main;
+import com.wearsky.keyMacro.utils.Constants.SystemStatus;
 
 /**
  * 单次执行宏，按一下执行一次，执行完成后才能触发下一次

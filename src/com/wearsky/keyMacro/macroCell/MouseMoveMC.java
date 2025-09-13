@@ -1,6 +1,6 @@
-package org.wearsky.keyMacro.macroCell;
+package com.wearsky.keyMacro.macroCell;
 
-import org.wearsky.keyMacro.utils.DD;
+import com.wearsky.keyMacro.utils.DD;
 
 /**
  * 鼠标移动宏单元

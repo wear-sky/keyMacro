@@ -1,17 +1,17 @@
-package org.wearsky.keyMacro.utils;
+package com.wearsky.keyMacro.utils;
 
-import org.wearsky.keyMacro.macro.ContinualMacro;
-import org.wearsky.keyMacro.macro.Macro;
-import org.wearsky.keyMacro.macro.OnceMacro;
-import org.wearsky.keyMacro.macro.SwitchMacro;
-import org.wearsky.keyMacro.macroCell.*;
-import org.wearsky.keyMacro.main.Main;
-import org.wearsky.keyMacro.ui.MainFrame;
-import org.wearsky.keyMacro.ui.MainFrame.MacrosTableModel;
-import org.wearsky.keyMacro.utils.Constants.DdCode;
-import org.wearsky.keyMacro.utils.Constants.SystemStatus;
-import org.wearsky.keyMacro.utils.Constants.TriggerType;
-import org.wearsky.keyMacro.utils.Constants.VkCode;
+import com.wearsky.keyMacro.macro.ContinualMacro;
+import com.wearsky.keyMacro.macro.Macro;
+import com.wearsky.keyMacro.macro.OnceMacro;
+import com.wearsky.keyMacro.macro.SwitchMacro;
+import com.wearsky.keyMacro.macroCell.*;
+import com.wearsky.keyMacro.main.Main;
+import com.wearsky.keyMacro.ui.MainFrame;
+import com.wearsky.keyMacro.ui.MainFrame.MacrosTableModel;
+import com.wearsky.keyMacro.utils.Constants.DdCode;
+import com.wearsky.keyMacro.utils.Constants.SystemStatus;
+import com.wearsky.keyMacro.utils.Constants.TriggerType;
+import com.wearsky.keyMacro.utils.Constants.VkCode;
 
 import javax.swing.*;
 import java.io.BufferedReader;

@@ -1,9 +1,9 @@
-package org.wearsky.keyMacro.ui;
+package com.wearsky.keyMacro.ui;
 
-import org.wearsky.keyMacro.main.Main;
-import org.wearsky.keyMacro.utils.Constants;
-import org.wearsky.keyMacro.utils.Constants.SystemStatus;
-import org.wearsky.keyMacro.utils.IconUtils;
+import com.wearsky.keyMacro.main.Main;
+import com.wearsky.keyMacro.utils.Constants;
+import com.wearsky.keyMacro.utils.Constants.SystemStatus;
+import com.wearsky.keyMacro.utils.IconUtils;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;

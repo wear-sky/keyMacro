@@ -1,11 +1,11 @@
-package org.wearsky.keyMacro.ui;
+package com.wearsky.keyMacro.ui;
 
-import org.wearsky.keyMacro.hook.KeyboardHook;
-import org.wearsky.keyMacro.macro.Macro;
-import org.wearsky.keyMacro.main.Main;
-import org.wearsky.keyMacro.utils.Constants.SystemStatus;
-import org.wearsky.keyMacro.utils.IconUtils;
-import org.wearsky.keyMacro.utils.Switch;
+import com.wearsky.keyMacro.hook.KeyboardHook;
+import com.wearsky.keyMacro.macro.Macro;
+import com.wearsky.keyMacro.main.Main;
+import com.wearsky.keyMacro.utils.Constants.SystemStatus;
+import com.wearsky.keyMacro.utils.IconUtils;
+import com.wearsky.keyMacro.utils.Switch;
 
 import javax.swing.*;
 import javax.swing.GroupLayout.Alignment;

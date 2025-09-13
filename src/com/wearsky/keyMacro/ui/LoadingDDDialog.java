@@ -1,6 +1,6 @@
-package org.wearsky.keyMacro.ui;
+package com.wearsky.keyMacro.ui;
 
-import org.wearsky.keyMacro.utils.DD;
+import com.wearsky.keyMacro.utils.DD;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;

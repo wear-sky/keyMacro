@@ -1,6 +1,6 @@
-package org.wearsky.keyMacro.ui;
+package com.wearsky.keyMacro.ui;
 
-import org.wearsky.keyMacro.utils.Constants.TriggerType;
+import com.wearsky.keyMacro.utils.Constants.TriggerType;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;

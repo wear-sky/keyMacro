@@ -1,9 +1,9 @@
-package org.wearsky.keyMacro.main;
+package com.wearsky.keyMacro.main;
 
-import org.wearsky.keyMacro.macro.Macro;
-import org.wearsky.keyMacro.ui.LoadingDDDialog;
-import org.wearsky.keyMacro.ui.MainFrame;
-import org.wearsky.keyMacro.utils.Constants.SystemStatus;
+import com.wearsky.keyMacro.macro.Macro;
+import com.wearsky.keyMacro.ui.LoadingDDDialog;
+import com.wearsky.keyMacro.ui.MainFrame;
+import com.wearsky.keyMacro.utils.Constants.SystemStatus;
 
 import javax.swing.*;
 import java.awt.*;

@@ -1,4 +1,4 @@
-package org.wearsky.keyMacro.macroCell;
+package com.wearsky.keyMacro.macroCell;
 
 import java.util.concurrent.TimeUnit;
 

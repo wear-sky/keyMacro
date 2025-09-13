@@ -1,8 +1,8 @@
-package org.wearsky.keyMacro.macro;
+package com.wearsky.keyMacro.macro;
 
-import org.wearsky.keyMacro.macroCell.MacroCell;
-import org.wearsky.keyMacro.main.Main;
-import org.wearsky.keyMacro.utils.Constants.SystemStatus;
+import com.wearsky.keyMacro.macroCell.MacroCell;
+import com.wearsky.keyMacro.main.Main;
+import com.wearsky.keyMacro.utils.Constants.SystemStatus;
 
 import java.util.concurrent.TimeUnit;
 

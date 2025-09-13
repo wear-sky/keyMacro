@@ -1,4 +1,4 @@
-package org.wearsky.keyMacro.macroCell;
+package com.wearsky.keyMacro.macroCell;
 
 /**
  * 宏单元接口

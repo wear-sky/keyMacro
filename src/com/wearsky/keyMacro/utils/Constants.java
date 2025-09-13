@@ -1,4 +1,4 @@
-package org.wearsky.keyMacro.utils;
+package com.wearsky.keyMacro.utils;
 
 /**
  * 常量类
