@@ -47,7 +47,7 @@ public class OnceMacro extends Macro {
         this.interrupt();
         try {
             this.join();
-        } catch (InterruptedException _) {
+        } catch (InterruptedException ignored) {
         }
     }
 
@@ -60,7 +60,7 @@ public class OnceMacro extends Macro {
             synchronized (this) {
                 try {
                     this.wait();
-                } catch (InterruptedException _) {
+                } catch (InterruptedException ignored) {
                 }
             }
             if (!isDeleted && Main.systemStatus == SystemStatus.RUNNING) {

@@ -35,12 +35,8 @@ public class Main {
      *
      * @param args 函数参数
      */
-    public static void main(String[] args) {
-        try {
-            UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
-        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException |
-                 UnsupportedLookAndFeelException _) {
-        }
+    public static void main(String[] args) throws UnsupportedLookAndFeelException, ClassNotFoundException, InstantiationException, IllegalAccessException {
+        UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
         EventQueue.invokeLater(() -> {
             LoadingDDDialog loadingDDDialog = new LoadingDDDialog();
             loadingDDDialog.setVisible(true);

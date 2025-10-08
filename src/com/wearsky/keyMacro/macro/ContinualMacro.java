@@ -72,7 +72,7 @@ public class ContinualMacro extends Macro {
         }
         try {
             this.join();
-        } catch (InterruptedException _) {
+        } catch (InterruptedException ignored) {
         }
     }
 
@@ -91,13 +91,13 @@ public class ContinualMacro extends Macro {
                 }
                 try {
                     TimeUnit.MILLISECONDS.sleep(intervalTime);
-                } catch (InterruptedException _) {
+                } catch (InterruptedException ignored) {
                 }
             } else {
                 synchronized (this) {
                     try {
                         this.wait();
-                    } catch (InterruptedException _) {
+                    } catch (InterruptedException ignored) {
                     }
                 }
             }

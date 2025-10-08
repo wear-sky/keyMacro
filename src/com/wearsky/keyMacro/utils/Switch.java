@@ -14,10 +14,7 @@ import com.wearsky.keyMacro.utils.Constants.TriggerType;
 import com.wearsky.keyMacro.utils.Constants.VkCode;
 
 import javax.swing.*;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.Objects;
 
 /**
@@ -167,9 +164,11 @@ public class Switch {
                     }
                     macrosTableModel.addRow(macro);
                 }
-            } catch (IOException _) {
+            } catch (IOException e) {
+                throw new RuntimeException(e);
             }
-        } catch (IOException _) {
+        } catch (RuntimeException | IOException e) {
+            throw new RuntimeException(e);
         }
     }
 

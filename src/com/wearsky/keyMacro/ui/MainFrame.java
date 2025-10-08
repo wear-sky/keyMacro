@@ -243,7 +243,8 @@ public class MainFrame extends JFrame {
         trayIcon.addActionListener(new TrayIconListener());
         try {
             SystemTray.getSystemTray().add(trayIcon);
-        } catch (AWTException _) {
+        } catch (AWTException e) {
+            throw new RuntimeException(e);
         }
         JPanel mainPanel = new JPanel();
         mainPanel.setBorder(new EmptyBorder(4, 4, 4, 4));
@@ -425,9 +426,11 @@ public class MainFrame extends JFrame {
                 try {
                     switchConfigField.setText(bufferedReader.readLine());
                     selectConfigComboBox.setSelectedItem(bufferedReader.readLine());
-                } catch (IOException _) {
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
                 }
-            } catch (IOException _) {
+            } catch (IOException e) {
+                throw new RuntimeException(e);
             }
         }
         keyboardHook.start();
@@ -470,7 +473,8 @@ public class MainFrame extends JFrame {
                 }
             }
             bufferedWriter.flush();
-        } catch (IOException _) {
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
     }
 
@@ -495,7 +499,8 @@ public class MainFrame extends JFrame {
                 bufferedWriter.write("");
             }
             bufferedWriter.flush();
-        } catch (IOException _) {
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
     }
 

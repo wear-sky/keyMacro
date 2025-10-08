@@ -17,8 +17,7 @@ public record DelayMC(long delay) implements MacroCell {
     public void performed() {
         try {
             TimeUnit.MILLISECONDS.sleep(delay);
-        } catch (InterruptedException e) {
-            Thread.currentThread().interrupt();// sleep中中断，中断状态会被清空，需要重新中断
+        } catch (InterruptedException ignored) {
         }
     }
 
